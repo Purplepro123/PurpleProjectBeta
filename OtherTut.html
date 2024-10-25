@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Tutorials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="apple_white.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5e6cc, #8b5bb7);
+            min-height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 60%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s ease forwards;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            text-align: center;
+            color: #8b5bb7;
+            font-weight: 600;
+        }
+        ol {
+            margin: 20px 0;
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            font-weight: 600;
+            color: #8b5bb7;
+        }
+        .link {
+            color: #8b5bb7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: #8b5bb7;
+            text-decoration: none;
+            font-weight: 600;
+            background-color: rgba(245, 230, 204, 0.8);
+            padding: 10px 15px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .back-arrow:hover {
+            background-color: #8b5bb7;
+            color: #f5e6cc;
+        }
+ @media screen and (max-width: 480px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .body {
+        padding: 10px;
+    }
+
+    .content-box {
+        width: 90%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .guide-list {
+        font-size: 0.95rem;
+    }
+
+    .back-arrow {
+        font-size: 18px;
+        padding: 6px 10px;
+        top: unset;
+        left: unset;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .warning {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-arrow">&larr; Back</a>
+
+    <div class="content-box">
+        <h1>How to convert .app to .ipa</h1>
+        <ol>
+            <li>Create a folder called <strong>Payload</strong>.</li>
+            <li>Place the <strong>.app</strong> folder inside of that.</li>
+            <li>Zip up the Payload folder using normal compression.</li>
+            <li>Then rename the file with a <strong>.ipa</strong> extension.</li>
+        </ol>
+    </div>
+
+    <div class="content-box">
+        <h1>How to install apple internal apps</h1>
+        <p>In this method you need <strong>ESign</strong> and <strong>TrollStore</strong> installed, jailbreak is not required.</p>
+        <ol>
+            <li>First of all, download your <strong>*.ipa</strong>.</li>
+            <li><strong>ESign:</strong>
+                <ul>
+                    <li>Tap on three dots at the top right corner &gt; Import &gt; On My iPhone &gt; Downloads.</li>
+                    <li>Import App Library popup should appear, click Import.</li>
+                    <li>Go to <strong>YYYAppFolder</strong> &gt; UnSignApps &gt; [APP_NAME].</li>
+                    <li>Tap on <strong>[FOLDER_NAME].app</strong>* &gt; Signature.</li>
+                    <li>Tap on more settings, uncheck checked options, and click Signature.</li>
+                </ul>
+            </li>
+            <li><strong>TrollStore:</strong>
+                <ul>
+                    <li>Tap on + at top right corner &gt; Install IPA File.</li>
+                    <li>Go to <strong>ESign-Omtk</strong> &gt; YYYAppFolder &gt; SignedApps &gt; [APP_NAME].ipa.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>* <strong>[FOLDER_NAME].app</strong> can be named differently than the app name, but there will be just one folder that ends with ".app".</p>
+    </div>
+
+</body>
+</html>

@@ -545,7 +545,29 @@
             background-color: #080808;
             color: rgb(231, 231, 231);
         }
+      
+@media (max-width: 768px) {
+    .content-box,
+    [class^="device-card-"] {
+        width: 80%;
+    }
+}
 
+@media (max-width: 480px) {
+    .content-box,
+    [class^="device-card-"] {
+        width: 100%;
+        padding: 15px;
+    }
+	    .back-arrow {
+        font-size: 18px;
+        padding: 6px 10px;
+        top: unset;
+        left: unset;
+        position: relative;
+        margin-bottom: 10px;
+    }
+}
 
     </style>
 </head>
